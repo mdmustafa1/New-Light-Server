@@ -47,7 +47,7 @@ repository.
        ```
     - [other commands for you reference!](https://docs.docker.com/compose/reference/overview/)  
     
-3. All the services will be run in background inside the docker container.
+3.  All the services will be run in background inside the docker container.
  ### Step 3:
  1. check ip address of your system by this command :
       ``` 
@@ -64,12 +64,19 @@ repository.
      ```
      (It will give you index file which is written in php.)
      
- 2. Now for accessing phpmyadmin for managing mysql database write this url:
+ 2. If you will type 
+ ```
+       http://192.168.40.130:2000/home.html
+ ```
+   (It will give you home login page.)
+   
+ 3. Now for accessing phpmyadmin for managing mysql database write this url:
    ``` 
    http://192.168.40.130:7000/
    ```
    
  - Note : here 2000 & 7000 are port no. that should be free in your system if they are not then you can change by going inside the **docker-compose.yml** file
+ - I added **screenshot** of output pages in  screenshots of project folder you can see from there.
  ### Step 5:
   - Now create your own web pages & put them in **html** folder.
   - Now it will be accessible from browser at 2000 port .
@@ -121,6 +128,7 @@ repository.
    - storage 
    - [Docker file](https://docs.docker.com/engine/reference/builder/)
       & many more!
+   
       
       
       
