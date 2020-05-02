@@ -1,0 +1,74 @@
+body
+{
+    margin:0px;
+    padding: 0px;
+}
+body
+{
+    background-image: url(bgimage.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.text-center
+{
+    color:white;
+    font-family: gautham;
+    font-weight: bold;
+    margin-top:40px;
+    font-size:40px;
+}
+.input-group
+{
+    margin-top: 20px;
+    
+}
+#icon
+{
+   background:transparent;
+    border-bottom: 0px;
+     border: 0px;
+    border-bottom: 1px solid gray;
+    color:white;
+    font-size: 20px;
+}
+#pwd
+{
+   background: transparent; 
+    border-radius: 0px;
+    border:0px;
+    border-bottom: 1px solid gray;
+
+    padding:20px;
+    font-size: 20px;
+    color:white;
+    
+}
+
+a
+{
+    font-size: 19px;
+    font-family: gautham;
+   text-decoration:none;
+    color: white;
+
+}
+
+
+
+.btn-default
+{
+
+    font-size:19px;
+    border-radius: 0px;
+    width:190px;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+.col-md-6
+{
+    margin-top: 90px;
+    background: rgba(24, 24, 24, 0.72);
+    height:400px;
+    box-shadow: 1px 4px 40px black;
+}

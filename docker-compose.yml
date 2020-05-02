@@ -1,0 +1,39 @@
+version: "3"
+services:
+        web_server:
+                build:
+                        dockerfile: php.Dockerfile
+                        context : .
+
+                restart: always
+                volumes:
+                        - ./html/:/var/www/html
+                ports: 
+                        - "2000:80"
+                
+
+        mysql_server:
+                image: mysql:5.7
+                environment:
+                        MYSQL_ROOT_PASSWORD: root
+                        MYSQL_USER: radhu
+                        MYSQL_PASSWORD: radhu
+                        MYSQL_DATABASE: mysql_db
+                restart: always
+                volumes:
+                        - mysql_data:/var/lib/mysql
+        phpmyadmin:
+                image: phpmyadmin/phpmyadmin:5.0.1
+                restart: always
+                environment:
+                        PMA_HOST: mysql_server
+                        PMA_USER: radhu
+                        PMA_PASSWORD:  radhu
+                ports:
+                        - "7000:80"
+
+volumes:
+        mysql_data:                               
+
+
+                                        
