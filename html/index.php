@@ -1,7 +1,7 @@
 <?php
 $host = "mysql_server";
-$user = "radhu";
-$password = "radhu";
+$user = "mohan";
+$password = "mohan";
 $db= "mysql_db";
   try
 	{	
